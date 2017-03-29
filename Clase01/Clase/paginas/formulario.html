@@ -1,0 +1,79 @@
+<!-- 
+         form: formulario
+            action="": destinatario de informacion
+            method=""  GET o POST
+            input: entrada
+                type="": tipo
+                    text: texto
+                    password: contraseña
+                    submit: boton de enviar
+                    reset: borra datos de formulario
+                    checkbox: seleccionar o no    checked si quiero que aparesca chequeado
+                    radio: radiobutton checked si quiero que aparesca chequeado MISMO NAME PARA QUE SEA EXCLUYENTE
+                name="": nombre de la variable que va en el post o get
+                size="": cantidad de caracteres visibles
+                value=" ": aparece una frase pre cargada
+            textarea: ingreso de texto
+                name="": nombre de la caja de texto
+                id="":id para js
+                cols="":
+                rows="":
+            select: lista de palabras, dentro del name envia el id de la opcion
+                name="": nombre de identificador. si quiero seleccionar mas de un valor, debo poner nombre[] y devuelve array
+                id="":
+                multiple: propiedad para seleccionar mas de una opcion
+                size="": cantidad de elementos a mostrar
+                optgroup: puedo poner dentro options y crear grupos
+                    label="": nombre que aparece en el grupo
+                option: opciones
+                    value="": numero de opcion
+                    selected se utiliza como propiedad para elegirlo por default
+            fieldset: grupo de controles con un marco y un titulo
+                legend: crea leyenda del grupo
+            tabindex: propiedad para cualquier etiqueta, enteros, que dan orden a que el cursor se desplace con tab
+            
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+<form action="#" method="POST">
+    <fieldset >
+        <legend> Datos </legend>
+
+Nombre:<input type="text" name="nombre" size="20" value="Nombre"><br>
+    Clave: <input type="password" name="pass" size="20"><br>
+       
+    
+    </fieldset>
+    Localidad:
+    <select name="lista" id="" >
+        <optgroup label="grupo1" >
+            <option value="1">Temperley</option>
+            <option value="2" >Banfield</option>
+
+        </optgroup>
+        <optgroup label="grupo2">
+        <option value="1">Avellaneda</option>
+        <option value="Lanus" selected >Lanus</option>
+</optgroup>
+    </select>
+    <br>
+    Comentarios:<br>
+    <textarea name="comentario" id="" cols="30" rows="10">Ingrese comentario</textarea>
+
+<br>
+<input type="checkbox" value="checkbox">check<br>
+<input type="radio" name="sexo" value="masculino">Masculino<br>
+<input type="radio" name="sexo" value="femenino">Femenino<br>
+    <input type="submit" value="Button" name="enviar">
+     <input type="reset" value="Borrar" name="delete">
+    
+</form>
+</body>
+</html>

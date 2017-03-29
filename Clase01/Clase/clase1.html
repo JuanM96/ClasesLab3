@@ -1,0 +1,82 @@
+<!-- ! + TAB + TAB y crea estructura html
+    head: cabezera de la pagina.
+        title:Titulo que se muestra en solapa de pestaña
+        meta:
+    body: cuerpo de pagina.
+        br: Salto de Linea
+        h1,h2,h3,h4,h5,h6 tamaño de titulo
+        p: Parrafo
+        lorem + TAB + TAB crea un parrafo de ejemplo para relleno
+        a: anchor, creo un hipervinculo a otra pagina.
+            href=" ": direccion del hipervinculo, puedo ingresar un name que tenga en la pagina poniendo # antes
+            name=" ": nombre para identificar el anchor y poder ir al sector deseado
+        img: Imagen
+            src=" ": path de la imagen
+            alt=" ": en el caso que no pueda cargar o mostrar la imagen es el texto que aparece en su lugar
+            width="": ancho
+            height="": alto
+        ul: lista
+            li: items dentro de la lista
+        ol: lista ordenada
+        dl: Lista de definiciones
+            dt: data term,  "titulo"
+            dd: data description, " definicion"
+        table: Crear tabla
+            border="": bordes
+            tr: Columna
+            td: filas
+                rowspan="": expandir filas
+                colspan=" ": expandir columna
+            th: encabezado de tabla
+
+
+-->
+<!DOCTYPE html>
+<html lang="en"><!-- lang: lenguaje de pagina -->
+<head>
+    <meta charset="UTF-8"> <!-- Reconoce acentos -->
+    <title>Clase 1</title>
+</head>
+<body>
+    Linea 1<BR>
+    Linea 2<BR>
+    <h1>Titulo en h1</h1>
+    <h2>Titulo en h2</h2>
+    <ol>
+        <li><a href="#p1">Parrafo 1</a>  </li>
+        <li><a href="#p2">Parrafo 2</a>  </li>
+        <li><a href="pagina2.html#p2">Parrafo 2 de Pagina 2</a>  </li><!--Voy al parrafo 2 en la segunda pagina -->
+        <li><a href="#p3">Parrafo 3</a>  </li>
+        <li><a href="#fin">Fin</a>  </li>
+    </ol>
+    <a name="p1"><h3>Parrafo 1</h3></a>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur inventore, minima nesciunt tenetur, provident, unde consequuntur amet eaque pariatur expedita laborum ut. Fugiat praesentium ipsam atque voluptates blanditiis, corrupti.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur inventore, minima nesciunt tenetur, provident, unde consequuntur amet eaque pariatur expedita laborum ut. Fugiat praesentium ipsam atque voluptates blanditiis, corrupti.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur inventore, minima nesciunt tenetur, provident, unde consequuntur amet eaque pariatur expedita laborum ut. Fugiat praesentium ipsam atque voluptates blanditiis, corrupti.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur inventore, minima nesciunt tenetur, provident, unde consequuntur amet eaque pariatur expedita laborum ut. Fugiat praesentium ipsam atque voluptates blanditiis, corrupti.
+
+    </p>
+    <a name="p2"><h4>Parrafo 2</h4></a>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur inventore, minima nesciunt tenetur, provident, unde consequuntur amet eaque pariatur expedita laborum ut. Fugiat praesentium ipsam atque voluptates blanditiis, corrupti.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur inventore, minima nesciunt tenetur, provident, unde consequuntur amet eaque pariatur expedita laborum ut. Fugiat praesentium ipsam atque voluptates blanditiis, corrupti.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur inventore, minima nesciunt tenetur, provident, unde consequuntur amet eaque pariatur expedita laborum ut. Fugiat praesentium ipsam atque voluptates blanditiis, corrupti.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur inventore, minima nesciunt tenetur, provident, unde consequuntur amet eaque pariatur expedita laborum ut. Fugiat praesentium ipsam atque voluptates blanditiis, corrupti.
+
+    </p>
+    <a name="p3"><h5>Parrafo 3</h5></a>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur inventore, minima nesciunt tenetur, provident, unde consequuntur amet eaque pariatur expedita laborum ut. Fugiat praesentium ipsam atque voluptates blanditiis, corrupti.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur inventore, minima nesciunt tenetur, provident, unde consequuntur amet eaque pariatur expedita laborum ut. Fugiat praesentium ipsam atque voluptates blanditiis, corrupti.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur inventore, minima nesciunt tenetur, provident, unde consequuntur amet eaque pariatur expedita laborum ut. Fugiat praesentium ipsam atque voluptates blanditiis, corrupti.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur inventore, minima nesciunt tenetur, provident, unde consequuntur amet eaque pariatur expedita laborum ut. Fugiat praesentium ipsam atque voluptates blanditiis, corrupti.
+
+    </p>
+    <a name="fin"><h6>FIN DE PAGINA </h6></a>
+    <a href="pagina2.html">Ir a Pagina 2</a><BR>
+    <a href="paginas/pagina3.html">Ir a Pagina 3</a><BR><!-- Accedo a pagina dentro del directorio-->
+    <img src="images/f1.jpg" alt="Formula 1" width="200" height="200"><BR>
+    <a href="paginas/pagina3.html"><img src="images/f1.jpg" alt="Formula 1" width="200" height="200"></a><BR><!-- Accedo a pagina dentro del directorio mediante imagen-->
+</body>
+</html>
