@@ -47,5 +47,8 @@ a:active{
     background-color: blueviolet;
 }
 p:hover{
-    background-color: black;
+    background-color: green;
+}
+textarea:focus{
+    background-color: blueviolet;    
 }
