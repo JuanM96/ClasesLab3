@@ -14,18 +14,18 @@ h1{
     /*padding: 10px;
     margin: 30px;*/
 }
-body{
+/*body{
     /*background-image: url("../images/unnamed.png");*/
 
-}
+/*}
 /*POR CLASE*/
-.vistoso
+/*.vistoso
 {
     background-color: black;
     color: aqua;
-}
+}*/
 /*POR ID*/
-#parrafoEspecial{
+/*#parrafoEspecial{
     color: blueviolet;
 }
 p span{
@@ -39,4 +39,13 @@ h2 + p{
 }
 p ~ p{
    color: blue; 
+}*/
+a:visited{
+    color: red;
+}
+a:active{
+    background-color: blueviolet;
+}
+p:hover{
+    background-color: black;
 }
