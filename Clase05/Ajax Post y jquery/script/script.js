@@ -4,7 +4,7 @@ $(document).ready(function (){
         var datos = "Nombre: " + $("txtnombre").val() + "Apellido: " + $("txtapellido").val();
         peticion = new XMLHttpRequest();
         peticion.onreadystatechange = procesarPeticion;
-        peticion.open("GET","php/pagina.php",datos,true);
+        peticion.open("GET","pagina.php",datos,true);
         peticion.send();
     })
 
