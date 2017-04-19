@@ -47,7 +47,7 @@ function subirFoto() {
         async: true
     })
         .done(function (objJson) {
-            if (// completar ) {
+            if (/*completar*/) {
                 alert(objJson.Mensaje);
                 return;
             }
